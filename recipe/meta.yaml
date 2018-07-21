@@ -1,6 +1,6 @@
 {% set name = "pony" %}
-{% set version = "0.7.3" %}
-{% set sha256 = "114b3e075e79de27a729bbc59812290334dd82644d41120df9d556336cffa67c" %}
+{% set version = "0.7.4" %}
+{% set sha256 = "1fdfdebd82c133eeedf1db14637f9212516b8ea4eeb9c1ce7aeb590d8759b44f" %}
 
 package:
   name: {{ name|lower }}
