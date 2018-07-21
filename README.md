@@ -21,14 +21,16 @@ a generator and translates it to its SQL equivalent.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pony-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pony-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pony-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pony-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pony-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pony-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pony-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pony-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/pony-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pony-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/pony-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pony-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pony/badges/version.svg)](https://anaconda.org/conda-forge/pony)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pony/badges/downloads.svg)](https://anaconda.org/conda-forge/pony)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pony-green.svg)](https://anaconda.org/conda-forge/pony) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pony.svg)](https://anaconda.org/conda-forge/pony) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pony.svg)](https://anaconda.org/conda-forge/pony) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pony.svg)](https://anaconda.org/conda-forge/pony) |
 
 Installing pony
 ===============
