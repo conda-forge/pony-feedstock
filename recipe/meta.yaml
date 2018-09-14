@@ -1,6 +1,6 @@
 {% set name = "pony" %}
-{% set version = "0.7.3" %}
-{% set sha256 = "114b3e075e79de27a729bbc59812290334dd82644d41120df9d556336cffa67c" %}
+{% set version = "0.7.6" %}
+{% set sha256 = "b18434011c03c2981e44a2cfbbaeec4bdebe30adb434d1dfd6be8f59d07f37bd" %}
 
 package:
   name: {{ name|lower }}
@@ -49,3 +49,4 @@ about:
 extra:
   recipe-maintainers:
     - dharhas
+    - sdc50
