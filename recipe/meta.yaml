@@ -1,6 +1,6 @@
 {% set name = "pony" %}
-{% set version = "0.7.9" %}
-{% set sha256 = "2fdc41d9dcf2b6e70dd0623e328f31349b559b8f5e83996f9272bac4fd7b279c" %}
+{% set version = "0.7.11" %}
+{% set sha256 = "d1008d465d3c5db435fe2636f4c9e1a4a04a24f27c5d7cb4943ba5c596de7e17" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  script: python setup.py install
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
