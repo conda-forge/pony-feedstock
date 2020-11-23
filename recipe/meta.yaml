@@ -1,27 +1,26 @@
 {% set name = "pony" %}
-{% set version = "0.7.13" %}
-{% set sha256 = "8a9e7339fe7a5182566c83047dbae8053aa1cf458bff0f21f1ae1b106a210cbb" %}
+{% set version = "0.7.14" %}
+{% set sha256 = "2f01e84e79ea7a14040225cb6c079bb266e7ba147346356c266490b18c77ce82" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python
+    - python >=2.7
     - pip
   run:
-    - python
+    - python >=2.7
 
 test:
   imports:
