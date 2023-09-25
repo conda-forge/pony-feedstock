@@ -1,6 +1,6 @@
 {% set name = "pony" %}
-{% set version = "0.7.16" %}
-{% set sha256 = "5f45fc67587f4520c560a57148cc573b097d42f82f5cb200d72c957b5708198d" %}
+{% set version = "0.7.17" %}
+{% set sha256 = "b72172d57abd5e0846cd8d71231572da20f526327bf0d33348a9276f624d8aa7" %}
 
 package:
   name: {{ name|lower }}
@@ -17,10 +17,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
 
 test:
   imports:
