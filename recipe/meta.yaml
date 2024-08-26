@@ -1,6 +1,6 @@
 {% set name = "pony" %}
-{% set version = "0.7.17" %}
-{% set sha256 = "b72172d57abd5e0846cd8d71231572da20f526327bf0d33348a9276f624d8aa7" %}
+{% set version = "0.7.18" %}
+{% set sha256 = "1fa2398b7e67b2576f32309c4e882ce796c78397062474b9ff39856bab14f6a2" %}
 
 package:
   name: {{ name|lower }}
@@ -19,6 +19,7 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools
   run:
     - python >=3.8
 
