@@ -1,6 +1,6 @@
 {% set name = "pony" %}
-{% set version = "0.7.18" %}
-{% set sha256 = "1fa2398b7e67b2576f32309c4e882ce796c78397062474b9ff39856bab14f6a2" %}
+{% set version = "0.7.20" %}
+{% set sha256 = "27a48dffd1d1005956ffa96873fb2de5eada639ca266c43db480cadabc860ccd" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
