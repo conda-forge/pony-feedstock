@@ -3,7 +3,7 @@ About pony-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pony-feedstock/blob/main/LICENSE.txt)
 
-Home: https://ponyorm.com
+Home: https://ponyorm.com/
 
 Package license: Apache-2.0
 
@@ -11,7 +11,7 @@ Summary: Pony is a Python Object Relational Mapper (ORM) with beautiful query sy
 
 Development: https://github.com/ponyorm/pony
 
-Documentation: https://docs.ponyorm.com
+Documentation: https://docs.ponyorm.com/
 
 Pony ORM is easy to use and powerful object-relational mapper
 for Python. Using Pony, developers can create and maintain
@@ -20,7 +20,6 @@ ffort. One of the most interesting features of Pony is its
 ability to write queries to the database using generator
 expressions. Pony then analyzes the abstract syntax tree of
 a generator and translates it to its SQL equivalent.
-
 
 Current build status
 ====================
