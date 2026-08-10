@@ -1,43 +1,44 @@
-{% set name = "pony" %}
-{% set version = "0.7.20" %}
-{% set sha256 = "27a48dffd1d1005956ffa96873fb2de5eada639ca266c43db480cadabc860ccd" %}
+schema_version: 1
+
+context:
+  version: "0.7.20"
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: pony
+  version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.org/packages/source/p/pony/pony-${{ version }}.tar.gz
+  sha256: 27a48dffd1d1005956ffa96873fb2de5eada639ca266c43db480cadabc860ccd
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: python -m pip install . -vv
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python ${{ python_min }}.*
     - pip
     - setuptools
   run:
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
 
-test:
-  requires:
-    - python {{ python_min }}
-  imports:
-    - pony
-    - pony.orm
-    - pony.utils
+tests:
+  - python:
+      imports:
+        - pony
+        - pony.orm
+        - pony.utils
+      pip_check: true
+      python_version: 
+        - ${{ python_min }}.*
+        - "*"
 
 about:
-  home: https://ponyorm.com
   license: Apache-2.0
-  license_family: Apache
   license_file: LICENSE
   summary: Pony is a Python Object Relational Mapper (ORM) with beautiful query syntax.
-
   description: |
     Pony ORM is easy to use and powerful object-relational mapper
     for Python. Using Pony, developers can create and maintain
@@ -46,8 +47,9 @@ about:
     ability to write queries to the database using generator
     expressions. Pony then analyzes the abstract syntax tree of
     a generator and translates it to its SQL equivalent.
-  doc_url: https://docs.ponyorm.com
-  dev_url: https://github.com/ponyorm/pony
+  homepage: https://ponyorm.com
+  repository: https://github.com/ponyorm/pony
+  documentation: https://docs.ponyorm.com
 
 extra:
   recipe-maintainers:
